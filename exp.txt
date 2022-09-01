@@ -1,0 +1,32 @@
+  GNU nano 6.4                                                                      code.sh
+for item in `ls`
+do
+        foldername=`echo $item | awk -F. '{ print $1 }'`
+        ln=$(expr length "$foldername")
+        if [ $ln == 1 ]
+        then
+                if [ -d $foldername ]
+                then
+                        echo "inside if condition"
+                        rm -rf $foldername
+                fi
+        mkdir $foldername
+        mv $foldername ../backup/
+        fi
+done
+for item in `ls`
+do
+        foldername=`echo $item | awk -F. '{ print $1 }'`
+        extention=`echo $item | awk -F. '{ print $2 }'`
+        ln=$(expr length "$foldername")
+        if [ $ln == 1 ]
+        then
+                if [ -d $extention ]
+                then
+                        echo "inside if condition"
+                        rm -rf $extention
+                fi
+        mkdir $extention
+        mv $extention ../backup/$foldername
+        fi
+done

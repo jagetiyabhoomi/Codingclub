@@ -1,0 +1,34 @@
+Step 1:-
+Filter only x,y,z Files
+like,
+x.pdf
+y.docx
+z.mp4
+
+Step 2:-
+Find name of that file
+like, 
+x
+y
+z
+
+Step 3:-
+Create folder with same name as filename in Backup folder present on Desktop
+like,
+x/
+y/
+z/
+
+Step 4:-
+Create folder with same as extention of that filename in backup/filename
+like;
+backup/x/pdf/
+backup/y/docx/
+backup/z/mp4/
+
+Step 5:-
+Copy a Original File and paste into that Specific folder
+Path like,
+backup/x/pdf/x.pdf
+backup/y/docx/y.docx
+backup/z/mp4/z.mp4
